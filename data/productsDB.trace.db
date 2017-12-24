@@ -1,0 +1,289 @@
+2017-12-22 22:47:56 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLException: Table "PLAY_EVOLUTIONS" not found; SQL statement:
+select id, hash, apply_script, revert_script, state, last_problem from play_evolutions where state like 'applying_%' [42102-193]
+2017-12-24 09:06:15 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLException: Table "PRODUCTS" not found; SQL statement:
+select * from products [42102-193]
+2017-12-24 09:14:36 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Column count does not match; SQL statement:
+INSERT INTO product VALUES (1,'Dell XPS 2015','32GB Ram I7 Processor' ,300,1000) [21002-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.command.dml.Insert.prepare(Insert.java:265)
+	at org.h2.command.Parser.prepareCommand(Parser.java:259)
+	at org.h2.engine.Session.prepareLocal(Session.java:561)
+	at org.h2.engine.Session.prepareCommand(Session.java:502)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1203)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:170)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:158)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1380)
+	at org.h2.server.web.WebApp.query(WebApp.java:1053)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1015)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1002)
+	at org.h2.server.web.WebThread.process(WebThread.java:164)
+	at org.h2.server.web.WebThread.run(WebThread.java:89)
+	at java.lang.Thread.run(Thread.java:748)
+2017-12-24 09:16:44 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "ID[*] VARCHAR2(255),
+NAME VARCHAR2(255),
+DESCRIPTION VARCHAR2(255),
+PRICE VARCHAR2(255) "; expected "INSERT, {"; SQL statement:
+id VARCHAR2(255),
+name VARCHAR2(255),
+Description Varchar2(255),
+price Varchar2(255) [42001-193]
+2017-12-24 09:16:44 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Column count does not match; SQL statement:
+INSERT INTO product VALUES (1,'Dell XPS 2015','32GB Ram I7 Processor' ,300,1000) [21002-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.command.dml.Insert.prepare(Insert.java:265)
+	at org.h2.command.Parser.prepareCommand(Parser.java:259)
+	at org.h2.engine.Session.prepareLocal(Session.java:561)
+	at org.h2.engine.Session.prepareCommand(Session.java:502)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1203)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:170)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:158)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1380)
+	at org.h2.server.web.WebApp.query(WebApp.java:1053)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1015)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1002)
+	at org.h2.server.web.WebThread.process(WebThread.java:164)
+	at org.h2.server.web.WebThread.run(WebThread.java:89)
+	at java.lang.Thread.run(Thread.java:748)
+2017-12-24 09:16:59 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "ID[*] VARCHAR2(255),
+NAME VARCHAR2(255),
+DESCRIPTION VARCHAR2(255),
+PRICE VARCHAR2(255) "; expected "INSERT, {"; SQL statement:
+id VARCHAR2(255),
+name VARCHAR2(255),
+Description Varchar2(255),
+price Varchar2(255) [42001-193]
+2017-12-24 09:16:59 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Column count does not match; SQL statement:
+INSERT INTO product VALUES (1,'Dell XPS 2015','32GB Ram I7 Processor' ,300,1000) [21002-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.command.dml.Insert.prepare(Insert.java:265)
+	at org.h2.command.Parser.prepareCommand(Parser.java:259)
+	at org.h2.engine.Session.prepareLocal(Session.java:561)
+	at org.h2.engine.Session.prepareCommand(Session.java:502)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1203)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:170)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:158)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1380)
+	at org.h2.server.web.WebApp.query(WebApp.java:1053)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1015)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1002)
+	at org.h2.server.web.WebThread.process(WebThread.java:164)
+	at org.h2.server.web.WebThread.run(WebThread.java:89)
+	at java.lang.Thread.run(Thread.java:748)
+2017-12-24 09:17:15 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "ID[*] VARCHAR2(255),
+NAME VARCHAR2(255),
+DESCRIPTION VARCHAR2(255),
+PRICE VARCHAR2(255) "; expected "INSERT, {"; SQL statement:
+id VARCHAR2(255),
+name VARCHAR2(255),
+Description Varchar2(255),
+price Varchar2(255) [42001-193]
+2017-12-24 09:17:15 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO PRODUCT VALUES (1B2[*],'Dell XPS 2015','32GB Ram I7 Processor' ,300,1000) "; expected "[, ::, *, /, %, +, -, ||, ~, !~, NOT, LIKE, REGEXP, IS, IN, BETWEEN, AND, OR, ,, )"; SQL statement:
+INSERT INTO product VALUES (1b2,'Dell XPS 2015','32GB Ram I7 Processor' ,300,1000) [42001-193]
+2017-12-24 09:17:31 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "ID[*] VARCHAR2(255),
+NAME VARCHAR2(255),
+DESCRIPTION VARCHAR2(255),
+PRICE VARCHAR2(255) "; expected "INSERT, {"; SQL statement:
+id VARCHAR2(255),
+name VARCHAR2(255),
+Description Varchar2(255),
+price Varchar2(255) [42001-193]
+2017-12-24 09:17:31 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO PRODUCT VALUES (1B2[*],'Dell XPS 2015','32GB Ram I7 Processor' ,1000) "; expected "[, ::, *, /, %, +, -, ||, ~, !~, NOT, LIKE, REGEXP, IS, IN, BETWEEN, AND, OR, ,, )"; SQL statement:
+INSERT INTO product VALUES (1b2,'Dell XPS 2015','32GB Ram I7 Processor' ,1000) [42001-193]
+2017-12-24 09:20:46 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "ID[*] VARCHAR2(255),
+NAME VARCHAR2(255),
+DESCRIPTION VARCHAR2(255),
+PRICE VARCHAR2(255) "; expected "INSERT, {"; SQL statement:
+id VARCHAR2(255),
+name VARCHAR2(255),
+Description Varchar2(255),
+price Varchar2(255) [42001-193]
+2017-12-24 09:20:46 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Column count does not match; SQL statement:
+INSERT INTO product VALUES ('1b2','Dell XPS 2015','32GB Ram I7 Processor' ,'1000') [21002-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.command.dml.Insert.prepare(Insert.java:265)
+	at org.h2.command.Parser.prepareCommand(Parser.java:259)
+	at org.h2.engine.Session.prepareLocal(Session.java:561)
+	at org.h2.engine.Session.prepareCommand(Session.java:502)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1203)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:170)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:158)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1380)
+	at org.h2.server.web.WebApp.query(WebApp.java:1053)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1015)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1002)
+	at org.h2.server.web.WebThread.process(WebThread.java:164)
+	at org.h2.server.web.WebThread.run(WebThread.java:89)
+	at java.lang.Thread.run(Thread.java:748)
+2017-12-24 09:21:42 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "ID[*] VARCHAR2(255),
+NAME VARCHAR2(255),
+DESCRIPTION VARCHAR2(255),
+PRICE VARCHAR2(255) "; expected "INSERT, {"; SQL statement:
+id VARCHAR2(255),
+name VARCHAR2(255),
+Description Varchar2(255),
+price Varchar2(255) [42001-193]
+2017-12-24 09:22:39 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "PRODUCT" already exists; SQL statement:
+create table product [42101-193]
+2017-12-24 09:22:39 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "ID[*] VARCHAR2 (255),
+NAME VARCHAR2 (255),
+DESCRIPTION VARCHAR2 (255),
+PRICE VARCHAR2 (255) "; expected "INSERT, {"; SQL statement:
+id VARCHAR2 (255),
+name VARCHAR2 (255),
+Description Varchar2 (255),
+price Varchar2 (255) [42001-193]
+2017-12-24 09:23:06 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Column count does not match; SQL statement:
+INSERT INTO product VALUES ('1b2','Dell XPS 2015','32GB Ram I7 Processor' ,'1000') [21002-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.command.dml.Insert.prepare(Insert.java:265)
+	at org.h2.command.Parser.prepareCommand(Parser.java:259)
+	at org.h2.engine.Session.prepareLocal(Session.java:561)
+	at org.h2.engine.Session.prepareCommand(Session.java:502)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1203)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:170)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:158)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1380)
+	at org.h2.server.web.WebApp.query(WebApp.java:1053)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1015)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1002)
+	at org.h2.server.web.WebThread.process(WebThread.java:164)
+	at org.h2.server.web.WebThread.run(WebThread.java:89)
+	at java.lang.Thread.run(Thread.java:748)
+2017-12-24 09:24:45 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "PRODUCT" already exists; SQL statement:
+create table product [42101-193]
+2017-12-24 09:24:45 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "ID[*] VARCHAR2 (255),
+NAME VARCHAR2 (255),
+DESCRIPTION VARCHAR2 (255),
+PRICE VARCHAR2 (255) "; expected "INSERT, {"; SQL statement:
+id VARCHAR2 (255),
+name VARCHAR2 (255),
+Description Varchar2 (255),
+price Varchar2 (255) [42001-193]
+2017-12-24 09:24:53 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "ID[*] VARCHAR2 (255),
+NAME VARCHAR2 (255),
+DESCRIPTION VARCHAR2 (255),
+PRICE VARCHAR2 (255) "; expected "INSERT, {"; SQL statement:
+id VARCHAR2 (255),
+name VARCHAR2 (255),
+Description Varchar2 (255),
+price Varchar2 (255) [42001-193]
+2017-12-24 09:26:18 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "ID[*] VARCHAR2 (255),
+NAME VARCHAR2 (255),
+DESCRIPTION VARCHAR2 (255),
+PRICE VARCHAR2 (255) "; expected "INSERT, {"; SQL statement:
+id VARCHAR2 (255),
+name VARCHAR2 (255),
+Description Varchar2 (255),
+price Varchar2 (255) [42001-193]
+2017-12-24 09:26:18 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Column count does not match; SQL statement:
+INSERT INTO product VALUES ('1b2','Dell XPS 2015','32GB Ram I7 Processor' ,'1000') [21002-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.command.dml.Insert.prepare(Insert.java:265)
+	at org.h2.command.Parser.prepareCommand(Parser.java:259)
+	at org.h2.engine.Session.prepareLocal(Session.java:561)
+	at org.h2.engine.Session.prepareCommand(Session.java:502)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1203)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:170)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:158)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1380)
+	at org.h2.server.web.WebApp.query(WebApp.java:1053)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1015)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1002)
+	at org.h2.server.web.WebThread.process(WebThread.java:164)
+	at org.h2.server.web.WebThread.run(WebThread.java:89)
+	at java.lang.Thread.run(Thread.java:748)
+2017-12-24 09:31:37 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLException: Column "ID" not found; SQL statement:
+insert into product (id,name,description,stock,price) values ( 1,'Dell XPS','32GB Ram I7 Processor ',100,1155.00 ) [42122-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.table.Table.getColumn(Table.java:682)
+	at org.h2.command.Parser.parseColumn(Parser.java:878)
+	at org.h2.command.Parser.parseColumnList(Parser.java:862)
+	at org.h2.command.Parser.parseInsert(Parser.java:1062)
+	at org.h2.command.Parser.parsePrepared(Parser.java:413)
+	at org.h2.command.Parser.parse(Parser.java:317)
+	at org.h2.command.Parser.parse(Parser.java:289)
+	at org.h2.command.Parser.prepareCommand(Parser.java:254)
+	at org.h2.engine.Session.prepareLocal(Session.java:561)
+	at org.h2.engine.Session.prepareCommand(Session.java:502)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1203)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:170)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:158)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1380)
+	at org.h2.server.web.WebApp.query(WebApp.java:1053)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1015)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1002)
+	at org.h2.server.web.WebThread.process(WebThread.java:164)
+	at org.h2.server.web.WebThread.run(WebThread.java:89)
+	at java.lang.Thread.run(Thread.java:748)
+2017-12-24 09:31:41 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLException: Column "ID" not found; SQL statement:
+insert into product (id,name,description,stock,price) values ( 1,'Dell XPS','32GB Ram I7 Processor ',100,1155.00 ) [42122-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.table.Table.getColumn(Table.java:682)
+	at org.h2.command.Parser.parseColumn(Parser.java:878)
+	at org.h2.command.Parser.parseColumnList(Parser.java:862)
+	at org.h2.command.Parser.parseInsert(Parser.java:1062)
+	at org.h2.command.Parser.parsePrepared(Parser.java:413)
+	at org.h2.command.Parser.parse(Parser.java:317)
+	at org.h2.command.Parser.parse(Parser.java:289)
+	at org.h2.command.Parser.prepareCommand(Parser.java:254)
+	at org.h2.engine.Session.prepareLocal(Session.java:561)
+	at org.h2.engine.Session.prepareCommand(Session.java:502)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1203)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:170)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:158)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1380)
+	at org.h2.server.web.WebApp.query(WebApp.java:1053)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1015)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1002)
+	at org.h2.server.web.WebThread.process(WebThread.java:164)
+	at org.h2.server.web.WebThread.run(WebThread.java:89)
+	at java.lang.Thread.run(Thread.java:748)
+2017-12-24 09:32:01 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLException: Table "PRODUCT" not found; SQL statement:
+insert into product (id,name,description,stock,price) values ( 1,'Dell XPS','32GB Ram I7 Processor ',100,1155.00 ) [42102-193]
